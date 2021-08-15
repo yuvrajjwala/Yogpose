@@ -100,7 +100,7 @@ img{
    display: none;
    position: relative;
    top: 100px;
-   z-index: -1;
+   z-index: 9999;
 }
 @media only screen and  (max-width: 400px)
 {
