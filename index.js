@@ -1,6 +1,6 @@
-window.onload = function() {
-   document.getElementById("roomaudio").play();
-}
+// window.onload = function() {
+//    document.getElementById("roomaudio").play();
+// }
 
 
 
