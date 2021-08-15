@@ -30,6 +30,7 @@ const URL = "https://teachablemachine.withgoogle.com/models/ySOJZcIkP/";
            webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
            await webcam.setup(); // request access to the webcam
            await webcam.play();
+          document.getElementById("starting").style.display="none";
            window.requestAnimationFrame(loop);
            document.getElementById("audio").play();
    
