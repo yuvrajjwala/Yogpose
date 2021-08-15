@@ -29,8 +29,9 @@ const URL = "https://teachablemachine.withgoogle.com/models/ySOJZcIkP/";
            const flip = true; // whether to flip the webcam
            webcam = new tmPose.Webcam(size, size, flip); // width, height, flip
            await webcam.setup(); // request access to the webcam
-           await webcam.play();
           document.getElementById("starting").style.display="none";
+           await webcam.play();
+          
            window.requestAnimationFrame(loop);
            document.getElementById("audio").play();
    
