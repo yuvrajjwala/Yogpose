@@ -1,0 +1,118 @@
+body{
+   background-color: black !important;
+   font-family: 'Poppins', sans-serif !important;
+   
+}
+.bodyimage{
+   height: 100vh;
+   width: 100vw;
+   background-color: black;
+   background-image: url('background4.jpg');
+   background-size: cover;
+   background-position: center;
+   position: absolute;
+   top: 0;
+   opacity: 0.2;
+   z-index: -99;
+}
+@media only screen and  (max-height: 700px)
+{
+   .bodyimage{
+      height: 700px;
+   }
+}
+#nav1{
+      
+   background-color:rgba(0, 0, 0, 0.062);
+   padding-left: 20px;
+}
+
+.yogposeh1{
+   margin-top: 175px;
+   text-align: center;
+   color: white;
+   cursor: default;
+   font-size: 72px;
+}
+
+
+
+.headingAi{
+   color: rgb(255, 255, 255); 
+   font-family: 'Poppins', sans-serif !important;
+   font-size: 22px !important;
+   margin: 10px 0 0 10px;
+   white-space: nowrap;
+   overflow: hidden;
+   cursor: default;
+   width: 625px;
+   animation: type 5s steps(100, end); 
+}
+@media only screen and  (max-width: 400px)
+{
+   .yogposeh1{
+      font-size: 50px !important;
+   }
+
+   .headingAi{
+      font-size: 16px !important;
+   }
+}
+@media only screen and  (max-width: 320px)
+{
+   .yogposeh1{
+      font-size: 33px !important;
+   }
+   .headingAi{
+      font-size: 14px !important;
+   }
+}
+
+/*set the background colour of div element to black */
+.wrapper {
+  background-color: black;
+ }
+
+ @keyframes type{ 
+  from { 
+       width: 0; 
+       } 
+   }
+
+
+.heading{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+}
+
+
+
+.chooseyoga{
+   text-align: center;
+   color: white;
+   display: block;
+   width: 150px;
+   margin: auto;
+   margin-top: 30px;
+   
+}
+
+.footer{
+   color: white;
+   position: absolute;
+   bottom: 0px;
+   text-align: center;
+   width: 100vw;
+   font-weight: 300;
+   font-size: 12px;
+   background-image: linear-gradient( rgba(0, 0, 0, 0.027),rgba(0, 0, 0, 0.219));
+}
+
+.credit{
+   font-size: 8px !important;
+   margin-top: -15px;
+}
+
+
+
