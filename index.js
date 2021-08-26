@@ -61,8 +61,20 @@ const URL = "https://teachablemachine.withgoogle.com/models/ySOJZcIkP/";
            const prediction = await model.predict(posenetOutput);
    
            for (let i = 0; i < maxPredictions; i++) {
+               let show=(Number(prediction[i].probability.toFixed(2))*100).toFixed(0)
+               if(show>95)show=100
+               else if(show>85)show=90
+               else if (show>75)show=80
+               else if(show>65)show=70
+               else if(show>55)show=60
+               else if(show>45)show=50
+               else if(show>35)show=40
+               else if(show>25)show=30
+               else if(show>15)show=20
+               else if(show>5)show=10
+               else show=0
                const classPrediction =
-                   prediction[i].className + ": " + (Number(prediction[i].probability.toFixed(2))*100).toFixed(0)+"%";
+                   prediction[i].className + ": " + show+"%";
              labelContainer.childNodes[i].innerHTML = classPrediction;
              //code for calculating the maxaccuracy and store it with time span
                     framecount+=1;//Counting the frame..
