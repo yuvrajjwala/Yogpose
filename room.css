@@ -317,8 +317,6 @@
 
 
 .yogaroomimage{
-   /* background-image: url('room2.jpg'); */
-   /* background: linear-gradient(to bottom, rgb(233, 233, 233), rgb(235, 235, 235));  */
    background: linear-gradient(to bottom, rgb(196, 236, 255), rgb(24, 157, 235));
    background-size: cover;
    height: 100vh;
@@ -438,6 +436,7 @@ body{
     font-size: 15px;
     margin-top: 8px;
     margin-bottom: 20px;
+    
 }
 
 .card .info .btn{

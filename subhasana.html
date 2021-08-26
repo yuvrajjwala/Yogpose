@@ -53,6 +53,17 @@
                 <li class="nav-item">
                   <a class="nav-link" href="room.html">Room</a>
                 </li>
+
+                <form class="d-flex">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="login.html">Sign In</a>
+                    </li>
+                   
+                    </ul>
                 
             </div>
           </div>
@@ -112,17 +123,33 @@
            <div class="instruction">You can try <span style="color: rgb(0, 153, 255);">SUKHASANA</span> with our <span style="color: rgb(0, 153, 255);">Artificial Intelligence </span>trainer, which will guide you throught your Yoga and will track your Results.</div>
            <button class="teachbutton" type="button" onclick="init()">TRY NOW</button>
            <div id="starting" class="starting">Setting up your Yoga Enviroment...<br>Please Give permision of camera to proceed.</div>
-           <div><canvas  id="canvas"></canvas></div>
+           <div><canvas  id="canvas">
+           </canvas></div>  
+           <div id="result" class="result">
+             <div id="results"></div>
+             <br>
+            <button style="z-index: 3; margin: 5px;" type="button" onclick="location.reload()" class="btn btn-primary try">Try Again</button>
+            <button style="z-index: 3; margin: 5px;" type="button" class="btn btn-primary try">Tutorial </button>
+            <a href="room.html"><button  style="z-index: 3; margin: 5px;" type="button" class="btn btn-danger niche">End Session </button></a>
+           </div>
+           
            
            <div id="label-container"></div>
-            <button id="refbtn" class="refbtn" type="button" onclick="location.reload()">End Session</button>
+            <button id="refbtn" class="refbtn" type="button" onclick="showaccu()">Result</button>
+
               
+            
+              <!-- <img src="sub.jpg" alt=""> -->
+              <!-- <button></button> -->
+            </div>
            
            
          </div>
          
+         
 
       </div>
+    
 
       
       
