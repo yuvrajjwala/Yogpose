@@ -145,10 +145,10 @@ const URL = "https://teachablemachine.withgoogle.com/models/ySOJZcIkP/";
             // alert(percent);
             // document.getElementById("result").innerHTML=(percent*100).toFixed(2)+"%";
             if(percent>=.6){
-                document.getElementById("results").innerHTML="You are doing 90% better than people on Yogpose."+"\n\n Your accruacy is "+(percent*100).toFixed(2)+"%";
+                document.getElementById("results").innerHTML="You are doing 90% better than people on Yogpose."+"\n\n Your accuracy is "+(percent*100).toFixed(2)+"%";
             }
             else if(percent>=0.4){
-                document.getElementById("results").innerHTML="You are doing 60% better than people on Yogpose."+"\n\n Your accruacy is "+(percent*100).toFixed(2)+"%";
+                document.getElementById("results").innerHTML="You are doing 60% better than people on Yogpose."+"\n\n Your accuracy is "+(percent*100).toFixed(2)+"%";
             }
             else{
                 document.getElementById("results").innerHTML="You are not doing it correctly"+"\n\n please see our tutorials videos to learn.";
